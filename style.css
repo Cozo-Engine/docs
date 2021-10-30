@@ -2,6 +2,17 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
 h1{
   color: red;
+}
+
+.warning{
+  background: #2515005;
+  color: white;
 }
