@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --white: #e8fffa;
+    --white-grey: #777777;
+    --light-blue: #00e1ff;
+    --blue: #0077ff;
+    --dark-blue: #001aff;
+    --dark: #1c2222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--dark);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.warning{
+    border-left: 5px solid var(--dark-blue);
+    background: var(--blue);
+    padding: 35px;
+}
+.center-h {
+    margin: auto;
+    width: 60%;
+}
+
+.shadow{
+    box-shadow: 5px 5px 50px #000;
+}
+
+.center-v{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-50{
+    font-size: 3vw;
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.div-white{
+    background-color: #fff;
+    border-left: 5px solid var(--white-grey);
+}
+
+.container{
+    height: auto;
+}
+
+.top-20{
+    top: 20vh;
+}
+
+.height-30{
+    height: 30vh;
+}
+
+.btn-white{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    text-align:center;
+    transition: all 0.2s;
+}
+.btn-white:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+.input{
+    width:60%;
+    padding: 5px;
+    border:1px solid black;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+@media all and (max-width:30em){
+    a.button1{
+        display:block;
+        margin:0.4em auto;
+    }
+}
