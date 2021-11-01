@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
 
 :root{
     --white: #e8fff0;
@@ -21,6 +22,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.grey{
+    background: var(--white-grey);
+}
+
 .warning{
     border-left: 5px solid var(--dark-blue);
     background: var(--blue);
@@ -31,10 +36,6 @@ body{
     width: 60%;
 }
 
-.shadow{
-    box-shadow: 5px 5px 50px #000;
-}
-
 .center-v{
     position: absolute;
     top: 50%;
@@ -42,8 +43,25 @@ body{
     transform: translate(-50%, -50%);
 }
 
+.center-t{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-18%, -40%);
+    margin: auto;
+    width: 60%;
+}
+
+.shadow{
+    box-shadow: 5px 5px 50px #000;
+}
+
 .text-50{
     font-size: 3vw;
+}
+
+.text-80{
+    font-size: 5vw;
 }
 
 .text-white{
@@ -54,9 +72,20 @@ body{
     color: var(--dark);
 }
 
+.text-dark-hover:hover{
+    color: var(--dark);
+}
+
 .div-white{
     background-color: #fff;
     border-left: 5px solid var(--white-grey);
+}
+
+.text-d-selection{
+    -webkit-user-select: none;  /* Chrome / Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE */
+    user-select: none;          
 }
 
 .container{
@@ -67,11 +96,23 @@ body{
     top: 20vh;
 }
 
+.top-30{
+    top: 30vh;
+}
+
+.left-30{
+    left: 30vw;
+}
+
 .height-30{
     height: 30vh;
 }
 
 .btn-white{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
     display:inline-block;
     padding:0.35em 1.2em;
     border:0.1em solid #FFFFFF;
@@ -85,8 +126,8 @@ body{
     transition: all 0.2s;
 }
 .btn-white:hover{
-    color:#000000;
-    background-color:#FFFFFF;
+    color:#fff;
+    background-color:#696969;
 }
 
 .input{
@@ -111,5 +152,8 @@ input[type=text], input[type=password] {
     a.button1{
         display:block;
         margin:0.4em auto;
+    }
+    .center-t{
+        font-size: 10vw;
     }
 }
