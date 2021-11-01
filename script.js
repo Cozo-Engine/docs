@@ -1,6 +1,6 @@
 function verifyPassword() {
     let pass1 = document.getElementById("password").value;
-    let pass2 = "password";
+    let pass2 = "if you're seeing this, you're smort";
     let match = true;
     if (pass1 != pass2) {
       alert("Passwords Do not match");
