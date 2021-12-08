@@ -1,0 +1,376 @@
+<!--<style>
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+:root {
+  --blue: #0e0620;
+  --white: #fff;
+  --green: #2ccf6d;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito Sans";
+  color: var(--blue);
+  font-size: 1em;
+}
+
+button {
+  font-family: "Nunito Sans";
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 35px;
+          padding-inline-start: 35px;
+}
+
+svg {
+  width: 100%;
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px;
+  z-index: 2;
+}
+.hamburger-menu button {
+  position: relative;
+  width: 30px;
+  height: 22px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+.hamburger-menu button span {
+  position: absolute;
+  height: 3px;
+  background: #000;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  transition: 0.1s ease-in;
+}
+.hamburger-menu button span:nth-child(2) {
+  top: 9px;
+}
+.hamburger-menu button span:nth-child(3) {
+  top: 18px;
+}
+.hamburger-menu [data-state=open] span:first-child {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.hamburger-menu [data-state=open] span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+.hamburger-menu [data-state=open] span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+nav {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--green);
+  color: var(--blue);
+  width: 300px;
+  z-index: 1;
+  padding-top: 80px;
+  transform: translateX(-100%);
+  transition: 0.24s cubic-bezier(0.52, 0.01, 0.8, 1);
+}
+nav li {
+  transform: translateX(-5px);
+  transition: 0.16s cubic-bezier(0.44, 0.09, 0.46, 0.84);
+  opacity: 0;
+}
+nav a {
+  display: block;
+  font-size: 1.75em;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.24s ease-in-out;
+}
+nav a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+nav[data-state=open] {
+  transform: translateX(0%);
+}
+nav[data-state=open] ul li:nth-child(1) {
+  transition-delay: 0.16s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(2) {
+  transition-delay: 0.32s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(3) {
+  transition-delay: 0.48s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(4) {
+  transition-delay: 0.64s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+.btn.green {
+  border: 4px solid var(--green);
+  color: var(--blue);
+}
+.btn.green:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--green);
+  z-index: -1;
+  transition: 0.2s ease;
+}
+.btn.green:hover {
+  color: var(--white);
+  background: var(--green);
+  transition: 0.2s ease;
+}
+.btn.green:hover:before {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+</style>
+<div class="hamburger-menu">
+        <button class="burger" data-state="closed">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+  </div>
+    <nav data-state="closed">
+        <ul>
+            <li>
+            <a href="pages/main.html">Home</a>
+            </li>
+            <li>
+            <a href="#">Services</a>
+            </li>
+            <li>
+            <a href="#">About</a>
+            </li>
+            <li>
+            <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h1>404</h1>
+          <h2>Oh we foud'wa! You're not on the right path!.</h2>
+          <p>The page you are looking for does not exist.
+            How you got here is a mystery. But you can click the button below
+            to go back to the homepage.
+          </p>
+          <a href="http://localhost:8080/pages/main.html"><button class="btn green">HOME</button></a>
+        </div>
+      </div>
+    </div>
+  </main>-->
+  <div>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+    
+    <svg
+       width="210mm"
+       height="297mm"
+       viewBox="0 0 210 297"
+       version="1.1"
+       id="svg5"
+       inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+       sodipodi:docname="moon.svg"
+       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#505050"
+         bordercolor="#eeeeee"
+         borderopacity="1"
+         inkscape:pageshadow="0"
+         inkscape:pageopacity="0"
+         inkscape:pagecheckerboard="0"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="0.78111094"
+         inkscape:cx="531.93468"
+         inkscape:cy="314.29594"
+         inkscape:window-width="1440"
+         inkscape:window-height="847"
+         inkscape:window-x="-8"
+         inkscape:window-y="-8"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs2">
+        <linearGradient
+           inkscape:collect="always"
+           id="linearGradient1717">
+          <stop
+             style="stop-color:#999999;stop-opacity:1;"
+             offset="0"
+             id="stop1713" />
+          <stop
+             style="stop-color:#464646;stop-opacity:1"
+             offset="1"
+             id="stop1715" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1717"
+           id="linearGradient1719"
+           x1="112.34329"
+           y1="54.954941"
+           x2="183.10313"
+           y2="138.95923"
+           gradientUnits="userSpaceOnUse" />
+        <filter
+           inkscape:collect="always"
+           style="color-interpolation-filters:sRGB"
+           id="filter1725"
+           x="-0.0075694977"
+           y="-0.0075694977"
+           width="1.015139"
+           height="1.015139">
+          <feGaussianBlur
+             inkscape:collect="always"
+             stdDeviation="0.31611828"
+             id="feGaussianBlur1727" />
+        </filter>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1717"
+           id="linearGradient2684"
+           x1="153.78203"
+           y1="71.81012"
+           x2="165.29875"
+           y2="88.74646"
+           gradientUnits="userSpaceOnUse" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1717"
+           id="linearGradient2866"
+           x1="124.65152"
+           y1="65.543671"
+           x2="189.34837"
+           y2="101.78745"
+           gradientUnits="userSpaceOnUse" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <circle
+           style="fill:url(#linearGradient1719);fill-rule:evenodd;stroke-width:0.264583;fill-opacity:1;opacity:0.81949458;filter:url(#filter1725)"
+           id="path35"
+           cx="147.89258"
+           cy="91.537453"
+           r="50.114544" />
+        <circle
+           style="fill:url(#linearGradient2684);stroke-width:0.264583;fill-opacity:1"
+           id="path187"
+           cx="156.49185"
+           cy="76.552292"
+           r="7.113266" />
+        <circle
+           style="fill:#333333;stroke-width:0.264583"
+           id="path189"
+           cx="144.80577"
+           cy="117.03016"
+           r="3.89536" />
+        <circle
+           style="fill:#333333;stroke-width:0.264583"
+           id="path191"
+           cx="121.26424"
+           cy="93.827362"
+           r="2.3710887" />
+        <circle
+           style="fill:url(#linearGradient2866);stroke-width:0.264583;fill-opacity:1"
+           id="path193"
+           cx="179.35593"
+           cy="101.78745"
+           r="9.9924459" />
+        <circle
+           style="fill:#808080;stroke-width:0.264583"
+           id="path199"
+           cx="172.24266"
+           cy="62.495117"
+           r="5.9277215" />
+        <circle
+           style="opacity:0.819495;fill:#666666;fill-opacity:1;stroke-width:0.264583"
+           id="path3250"
+           cx="135.82951"
+           cy="65.713028"
+           r="7.113266" />
+      </g>
+    </svg>    
+  </div>
+  <script src="script.js"></script>
+  <script>
+      includeHTML();
+  </script>

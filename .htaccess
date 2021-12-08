@@ -3,3 +3,5 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^firstdomain.com [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.firstdomain.com [NC]
 RewriteRule ^(.*)$ http://seconddomain.com/$1 [L,R=301,NC]
+
+ErrorDocument 404 /404.html

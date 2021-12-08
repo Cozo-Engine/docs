@@ -7,6 +7,7 @@
     --light-blue: #00e1ff;
     --blue: #0077ff;
     --dark-blue: #001aff;
+    --grey-blue: #353a3a;
     --dark: #1c2222;
 }
 
@@ -37,6 +38,10 @@ body{
 
 .grey{
     background: var(--white-grey);
+}
+
+.grey-blue{
+    background: var(--grey-blue);
 }
 
 .dark{
@@ -84,6 +89,10 @@ body{
 
 .text-80{
     font-size: 5vw;
+}
+
+.text-120{
+    font-size: 10vw;
 }
 
 .text-white{
@@ -137,6 +146,12 @@ body{
     top: 30vh;
 }
 
+.Downloads{
+    position: relative;
+    top: -20vh;
+    text-shadow: #1c2222 0px 10px 10px;
+}
+
 .left-30{
     left: 30vw;
 }
@@ -155,6 +170,10 @@ body{
 
 .height-30{
     height: 30vh;
+}
+
+.hidden{
+    display: none;
 }
 
 .btn-white{
@@ -208,5 +227,11 @@ input[type=text], input[type=password] {
 
     .text-50{
         font-size: 5vw;
+    }
+}
+
+@media all and (max-width:920px){
+    .Downloads{
+        top: -12vw;
     }
 }
