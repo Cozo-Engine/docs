@@ -1,0 +1,25 @@
+var-type{
+    color: aqua;
+}
+
+var{
+    color: #d3d3d3;
+}
+
+function{
+    color: #d63f3c;
+}
+
+symbol{
+    color: #cec0cd;
+}
+
+code-prompt{
+    display: inline-block;
+    color: #FFF;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #1b1b1b;  
+    padding: 0.5em 0.2em 0.8em 0.5em;
+}

@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    height: 500px;
+    background-color: #0099ff;
+    clip-path: ellipse(75% 100% at 51.5% 0%);
+}
+
+.header .title{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+
+.footer{
+    position: absolute;
+    display: block;
+}
+
+@media all and (max-width: 45em){
+    .footer{
+        left: -203.5vh;
+        height: 100vh;
+    }
+    .head{
+        left: -203.5vh;
+        height: 20vh;
+    }
+}

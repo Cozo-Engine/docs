@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body ontouchstart="">
     <nav class="navbar text-d-selection text-dark">
-        <i class='bx bxs-right-arrow text-50'></i>
+        <i class='bx bxs-right-arrow'></i>
         <div class="logo">Cozot Engine</div>
             <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <label for="checkbox_toggle" id="hamburger" onclick="openNav()">&#9776;</label>
                 <div class="menu">
                 <li>
                     <i class='bx bxs-book-bookmark' ></i>
@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <i class='bx bxs-download' ></i>
-                    <a href="">Download</a>
+                    <a href="download">Download</a>
                 </li>
                 <li class="services">
                     <i class='bx bxs-message-square-dots' ></i>
@@ -71,5 +71,12 @@
             </div>
         </ul>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" id="a">About</a>
+        <a href="#" id="b">Services</a>
+        <a href="#" id="c">Clients</a>
+        <a href="#" id="d">Contacts</a>
+    </div>
 </body>
 </html>
