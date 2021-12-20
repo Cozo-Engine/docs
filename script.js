@@ -12,7 +12,7 @@ function verifyPassword() {
     }
     else {
         alert("Passwords match.");
-        window.location.replace("http://localhost:5500/pages/main.html");
+        window.location.href("pages/main.html");
     }
     return match;
 }
